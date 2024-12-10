@@ -1,0 +1,25 @@
+{
+    "manifest-version": 3,
+
+    "name": "Coolmathgames Ad Blocker",
+    "description": "Blocks annoying game ads on Coolmathgames, while still granting reward!",
+    "version": "0.0.1",
+
+    "icons": {
+        "64": ""
+    },
+
+    "background": {
+        "service-worker": "background/service-worker.js"
+    },
+
+    "host_permissions": [
+        "*://*.coolmathgames.com/*"
+    ],
+
+    "permissions": [
+        "tabs",
+        "scripting",
+        "storage"
+    ]
+}
